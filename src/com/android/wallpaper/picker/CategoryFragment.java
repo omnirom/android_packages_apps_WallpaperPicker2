@@ -160,6 +160,7 @@ public class CategoryFragment extends ToolbarFragment {
         gridLayoutManager.setSpanSizeLookup(new CategorySpanSizeLookup(mAdapter));
         mImageGrid.setLayoutManager(gridLayoutManager);
         setUpToolbar(view);
+        
         return view;
     }
 
@@ -190,6 +191,18 @@ public class CategoryFragment extends ToolbarFragment {
         // The wallpaper may have been set while this fragment was paused, so force refresh the current
         // wallpapers and presentation mode.
         refreshCurrentWallpapers(metadataHolder, true /* forceRefresh */);
+    }
+
+    public void checkAndRequestStoragePermissions() {
+        if (!getFragmentHost().isReadExternalStoragePermissionGranted()) {
+            getFragmentHost().requestExternalStoragePermission(mAdapter);
+        }
+    }
+
+    @Override
+    public void onActivityCreated (Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        checkAndRequestStoragePermissions();
     }
 
     @Override
