@@ -13,16 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:tools="http://schemas.android.com/tools" tools:targetApi="23">
+<resources xmlns:tools="http://schemas.android.com/tools" >
 
     <!-- Main themes -->
     <style name="WallpaperTheme" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="colorPrimary">?android:colorPrimary</item>
-        <item name="colorControlActivated">?attr/colorPrimary</item>
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
-        <item name="android:navigationBarColor">@color/translucent_black</item>
+        <item name="colorControlActivated">@color/color_primary</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_primary</item>
         <item name="android:navigationBarDividerColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">false</item>
 
         <item name="actionBarSize">?android:attr/actionBarSize</item>
         <item name="homeAsUpIndicator">@drawable/material_ic_arrow_back_black_24</item>
@@ -87,9 +86,7 @@
     </style>
 
     <!-- Individual components / Widgets -->
-    <style name="HeaderTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:textFontWeight">400</item>
-    </style>
+    <style name="HeaderTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"/>
 
     <style name="ButtonStyle" parent="@android:style/Widget.DeviceDefault.Button.Colored">
         <item name="android:padding">16dp</item>

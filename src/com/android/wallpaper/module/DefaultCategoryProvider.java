@@ -189,7 +189,8 @@ public class DefaultCategoryProvider implements CategoryProvider {
         protected List<String> getExcludedThirdPartyPackageNames() {
             return Arrays.asList(
                     "com.android.launcher", // Legacy launcher
-                    "com.android.wallpaper.livepicker"); // Live wallpaper picker
+                    "com.android.wallpaper.livepicker", // Live wallpaper picker
+                    "com.android.customization");
         }
 
         /**

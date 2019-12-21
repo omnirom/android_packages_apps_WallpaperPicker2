@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import com.android.wallpaper.R;
 import com.android.wallpaper.asset.Asset;
@@ -58,12 +59,12 @@ public class ThirdPartyAppCategory extends Category {
         List<ThirdPartyAppCategory> thirdPartyApps = new ArrayList<ThirdPartyAppCategory>();
 
         // Get list of image picker intents.
-        Intent pickImageIntent = new Intent(Intent.ACTION_GET_CONTENT);
+        /*Intent pickImageIntent = new Intent(Intent.ACTION_GET_CONTENT);
         pickImageIntent.setType("image/*");
         final List<ResolveInfo> imagePickerActivities =
-                context.getPackageManager().queryIntentActivities(pickImageIntent, 0);
+                context.getPackageManager().queryIntentActivities(pickImageIntent, 0);*/
 
-        outerLoop:
+        //outerLoop:
         for (int i = 0; i < apps.size(); i++) {
             ResolveInfo info = apps.get(i);
 
@@ -77,11 +78,11 @@ public class ThirdPartyAppCategory extends Category {
             }
 
             // Exclude any package that already responds to the image picker intent.
-            for (ResolveInfo imagePickerActivityInfo : imagePickerActivities) {
+            /*for (ResolveInfo imagePickerActivityInfo : imagePickerActivities) {
                 if (itemPackageName.equals(imagePickerActivityInfo.activityInfo.packageName)) {
                     continue outerLoop;
                 }
-            }
+            }*/
 
             ThirdPartyAppCategory category = new ThirdPartyAppCategory(
                     context,

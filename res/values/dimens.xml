@@ -36,12 +36,12 @@
     <dimen name="single_metadata_card_elevation">2dp</dimen>
     <dimen name="single_metadata_card_corner_radius">0dp</dimen>
     <dimen name="single_metadata_card_layout_height">192dp</dimen>
-    <dimen name="single_metadata_pane_vertical_offset">8dp</dimen>
-    <dimen name="single_metadata_pane_horizontal_offset">8dp</dimen>
-    <dimen name="single_metadata_pane_bottom_offset">12dp</dimen>
+    <dimen name="single_metadata_pane_vertical_offset">4dp</dimen>
+    <dimen name="single_metadata_pane_horizontal_offset">4dp</dimen>
+    <dimen name="single_metadata_pane_bottom_offset">4dp</dimen>
     <dimen name="single_metadata_pane_thumb_width">120dp</dimen>
-    <dimen name="single_metadata_pane_attributions_margin_left">16dp</dimen>
-    <dimen name="single_metadata_pane_attributions_margin_right">16dp</dimen>
+    <dimen name="single_metadata_pane_attributions_margin_left">8dp</dimen>
+    <dimen name="single_metadata_pane_attributions_margin_right">8dp</dimen>
     <dimen name="single_metadata_pane_wallpaper_label_margin_top">10dp</dimen>
     <dimen name="single_metadata_pane_wallpaper_title_margin_top">12dp</dimen>
 
@@ -79,7 +79,7 @@
     <dimen name="categories_loading_indicator_margin_top">16dp</dimen>
 
     <!-- Dimensions for "Select wallpaper" header. -->
-    <dimen name="select_wallpaper_header_height">48dp</dimen>
+    <dimen name="select_wallpaper_header_height">40dp</dimen>
     <dimen name="select_wallpaper_header_margin_left">12dp</dimen>
 
     <!-- Dimensions for "daily refresh" rotation tile in individual picker. -->

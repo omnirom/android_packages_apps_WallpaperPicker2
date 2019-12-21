@@ -23,6 +23,4 @@
     android:gravity="start|center_vertical"
     android:text="@string/select_wallpaper_label"
     android:textAlignment="viewStart"
-    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
-    android:textColor="@color/select_wallpaper_header_text_color"
-    android:textSize="@dimen/abc_text_size_subhead_material"/>
+    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
