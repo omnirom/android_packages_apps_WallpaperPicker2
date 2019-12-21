@@ -31,7 +31,8 @@
         app:cardMaxElevation="@dimen/single_metadata_card_elevation"
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true"
-        app:contentPadding="0dp">
+        app:contentPadding="0dp"
+        app:cardBackgroundColor="@color/color_primary">
 
         <LinearLayout
             android:layout_width="match_parent"

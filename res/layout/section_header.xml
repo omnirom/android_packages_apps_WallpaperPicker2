@@ -29,7 +29,7 @@
         android:layout_height="?android:attr/actionBarSize"
         android:layout_gravity="top"
         app:layout_scrollFlags="scroll|enterAlways"
-        android:background="?attr/colorPrimary">
+        android:background="@color/color_primary">
         <TextView
             android:id="@+id/custom_toolbar_title"
             android:layout_width="wrap_content"

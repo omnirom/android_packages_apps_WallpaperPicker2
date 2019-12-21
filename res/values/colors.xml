@@ -33,4 +33,7 @@
 
     <color name="status_bar_color">@color/material_black_100</color>
     <color name="toolbar_color">#000000</color>
+
+    <color name="color_primary_dark">@*android:color/primary_dark_device_default_settings_light</color>
+    <color name="color_primary">@*android:color/primary_device_default_settings_light</color>
 </resources>

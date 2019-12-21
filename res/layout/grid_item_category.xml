@@ -28,7 +28,8 @@
         android:layout_above="@+id/category_title"
         android:foreground="?attr/selectableItemBackground"
         app:cardElevation="0dp"
-        app:cardCornerRadius="?android:dialogCornerRadius">
+        app:cardCornerRadius="?android:dialogCornerRadius"
+        app:cardBackgroundColor="@color/color_primary" >
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
