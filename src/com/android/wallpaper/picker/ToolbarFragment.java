@@ -15,6 +15,7 @@
  */
 package com.android.wallpaper.picker;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -75,6 +76,11 @@ public abstract class ToolbarFragment extends Fragment implements OnMenuItemClic
         if (!TextUtils.isEmpty(title)) {
             setTitle(title);
         }
+        
+        Drawable backIcon = getResources().getDrawable(R.drawable.ic_arrow_back, null).mutate();
+        backIcon.setTintList(getResources().getColorStateList(R.color.toolbar_icon_color, null));
+        mToolbar.setNavigationIcon(backIcon);
+        mToolbar.setNavigationOnClickListener(v -> getActivity().finish());
     }
 
     /**
