@@ -81,7 +81,7 @@
         android:theme="@style/WallpaperTheme.Preview">
     </activity>
 
-    <service
+    <!--<service
         android:name="com.android.wallpaper.module.NoBackupImageWallpaper"
         android:enabled="@bool/enable_no_backup_image_wallpaper"
         android:label="@string/no_backup_image_wallpaper_label"
@@ -93,7 +93,7 @@
       <meta-data
           android:name="android.service.wallpaper"
           android:resource="@xml/no_backup_image_wallpaper" />
-    </service>
+    </service>-->
   </application>
 
 </manifest>
